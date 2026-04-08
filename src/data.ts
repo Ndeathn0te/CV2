@@ -10,7 +10,7 @@ export const cvData: CVData = {
     linkedin: "linkedin.com/in/armando-gonzalez-tapiador",
     photo: "https://media.licdn.com/dms/image/v2/D4D03AQEW8hzfDwtP8A/profile-displayphoto-shrink_800_800/B4DZSzL4cLHkAc-/0/1738173025110?e=1775692800&v=beta&t=GzVQ_npAg3v4AuVE6Yr-8slyTcuNGm_Hratov_YpwCY",
   },
-  summary: "• BIM Manager / Coordinador y Director de Proyectos PMP con más de 5 años entregando proyectos internacionales complejos en los sectores de Salud, Centros de Datos a Hiperescala, Infraestructura, Científico, Deportes y Defensa.\n• Exposición a más de 10.000 millones de euros en valor de programa acumulado y más de 500.000 m² de área construida coordinada.\n• Trayectoria dirigiendo operaciones a nivel de departamento bajo PMBOK / ISO 21502 / ISO 19650 — desde la gestión del ciclo de vida del BEP y la adquisición de talento hasta sesiones ICE con clientes y gobernanza de QA.\n• Liderazgo de equipos multidisciplinarios (hasta 16 miembros) en megaproyectos concurrentes en entornos bilingües (inglés/español), operando como un vínculo de confianza entre el liderazgo ejecutivo, los equipos de ingeniería y los clientes de Nivel 1.",
+  summary: "• BIM Manager / Coordinador y Director de Proyectos PMP con más de 5 años de experiencia en la entrega de proyectos internacionales de alta complejidad en los sectores de Salud, Centros de Datos a Hiperescala, Infraestructura, Científico, Deportes y Defensa.\n• Más de 10.000 millones de euros en valor de programa acumulado y más de 500.000 m² de área construida coordinada.\n• Dirección de operaciones a nivel departamental bajo PMBOK / ISO 21502 / ISO 19650 — abarcando la gestión del ciclo de vida del BEP, la adquisición de talento, sesiones ICE con clientes y gobernanza de QA.\n• Liderazgo de equipos multidisciplinarios (hasta 16 miembros) en megaproyectos concurrentes en entornos bilingües (inglés/español), actuando como enlace de confianza entre la dirección ejecutiva, los equipos de ingeniería y los clientes de Nivel 1.",
   experience: [
     {
       dates: "2025-08 a la actualidad",
@@ -20,7 +20,7 @@ export const cvData: CVData = {
       role: "Coordinador BIM MEP",
       location: "Alicante, España",
       project: "Ampliación del Hospital de Orihuela (~45.000m² | ~€70M) - Departamento de Salud de la Vega Baja",
-      summary: "• Único recurso BIM para el alcance de climatización MEP de Germania dentro de una ampliación sanitaria de 70 millones de euros (Valnu → Rover → Germania), entregando coordinación de extremo a extremo: modelado de sistemas mecánicos en cubierta, cuantificación por fases (construido vs. pendiente) y verificación de construcción in situ garantizando la alineación del diseño con la obra.\n• Establecimiento de estándares BIM funcionales mínimos (LoIN/BEP) adaptados a las necesidades operativas, gestionando flujos de trabajo de modelos federados para la adquisición basada en datos y la validación de la cadena de suministro.",
+      summary: "• Único recurso BIM para el alcance de climatización MEP de Germania en una ampliación sanitaria de €70M (cadena contractual Valnu → Rover → Germania), con coordinación integral: modelado de sistemas mecánicos en cubierta, cuantificación por fases (construido vs. pendiente) y verificación de obra in situ garantizando la fidelidad del diseño ejecutado.\n• Definición de estándares BIM funcionales mínimos (LoIN/BEP) adaptados a las necesidades operativas, gestionando flujos de modelos federados para la contratación basada en datos y la validación de la cadena de suministro.",
       reasonForLeaving: "N/A - Puesto actual",
     },
     {
@@ -31,7 +31,7 @@ export const cvData: CVData = {
       role: "Consultor BIM AEC",
       location: "Madrid, España",
       project: "Diversos clientes de ingeniería y arquitectura de Nivel 1",
-      summary: "• Diagnóstico de flujos de trabajo BIM de clientes y niveles de madurez para ofrecer demostraciones específicas, formación y estrategias de adopción — posicionando Environment for Revit, NTI for Revit y Realtime LCA a través de Speckle para evaluaciones de carbono durante todo el ciclo de vida.\n• Preparación de empresas para la refundición obligatoria de la EPBD (UE 2024/1275) y las obligaciones de informes WLC de Level(s) efectivas en 2028.\n• Guía en implementaciones de ISO 19650/CDE y coordinación multidisciplinaria para elevar los estándares de entrega interna.",
+      summary: "• Evaluación de flujos de trabajo BIM y niveles de madurez digital de clientes para diseñar demostraciones específicas, formación y estrategias de adopción — posicionando Environment for Revit, NTI for Revit y Realtime LCA a través de Speckle para evaluaciones de carbono a lo largo del ciclo de vida del activo.\n• Preparación de empresas ante la refundición obligatoria de la EPBD (UE 2024/1275) y las obligaciones de informes WLC de Level(s) vigentes desde 2028.\n• Asesoramiento en implementaciones de ISO 19650/CDE y coordinación multidisciplinaria para elevar los estándares de entrega interna.",
       reasonForLeaving: "Acepté oferta para regresar a Germania para un proyecto hospitalario a gran escala.",
     },
     {
@@ -42,7 +42,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM / Especialista MEP",
       location: "España",
       project: "Centros de Datos a Hiperescala (~20.000m² IT por instalación | ~€6-10B Programa Regional) - Microsoft y Amazon / Infraestructura de Defensa de la OTAN (~250.000m² | ~€0.8B) vía AECOM",
-      summary: "• Entrega de paquetes de diseño técnico MEP y coordinación espacial (LOD 300-350) en inglés y español para centros de datos a hiperescala de misión crítica e infraestructura de defensa bajo marcos de AECOM, estándares USACE y protocolos de seguridad protegidos por NDA.\n• Seguimiento de hitos de entregables por fases (30/60/90/100%).",
+      summary: "• Producción de paquetes de diseño técnico MEP y coordinación espacial (LOD 300-350) en inglés y español para centros de datos a hiperescala de misión crítica e infraestructura de defensa, bajo marcos de AECOM, estándares USACE y protocolos de seguridad sujetos a NDA.\n• Control de hitos y entregables por fases (30/60/90/100%).",
       reasonForLeaving: "Finalización de la fase del proyecto; transición a consultoría BIM con el apoyo de la dirección.",
     },
     {
@@ -53,8 +53,8 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "España / Bélgica",
       project: "Infraestructura de Defensa de la OTAN (~250.000m² | ~€0.8B) - Bélgica vía AECOM",
-      summary: "• Diseño y coordinación BIM de despliegue rápido para instalaciones de defensa de la OTAN bajo protocolos AECOM/USACE.\n• Gestión de entregas por fases en un entorno bilingüe, asegurando un compromiso a largo plazo.",
-      reasonForLeaving: "AECOM redujo la plantilla externa; reincorporación para un puesto MEP ampliado a través de Exceltic.",
+      summary: "• Diseño y coordinación BIM de despliegue rápido para instalaciones de defensa de la OTAN bajo protocolos AECOM/USACE.\n• Gestión de entregas escalonadas en entorno bilingüe, asegurando la continuidad del compromiso a largo plazo.",
+      reasonForLeaving: "Reducción de plantilla externa por parte de AECOM; reincorporación a un puesto MEP de mayor alcance a través de Exceltic.",
     },
     {
       dates: "2024-08 a 2024-09",
@@ -64,8 +64,8 @@ export const cvData: CVData = {
       role: "Modelador BIM MEP / CAD",
       location: "Madrid, España",
       project: "Diversas instalaciones residenciales, intercambiadores de transporte e industriales",
-      summary: "• Apoyo a los flujos de trabajo de preconstrucción mediante la preparación de distribuciones espaciales MEP en CAD, planos de producción y mediciones manuales en múltiples proyectos de ritmo rápido.",
-      reasonForLeaving: "Acepté un puesto centrado en proyectos de defensa internacionales que ofrecían un mayor alcance técnico.",
+      summary: "• Soporte a los flujos de preconstrucción mediante la elaboración de distribuciones espaciales MEP en CAD, planos de producción y mediciones manuales en múltiples proyectos simultáneos de ritmo acelerado.",
+      reasonForLeaving: "Transición a un puesto centrado en proyectos de defensa internacionales con mayor alcance técnico.",
     },
     {
       dates: "2024-06 a 2024-08",
@@ -75,7 +75,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "España",
       project: "Remodelación del Spotify Camp Nou (~300.000m² | ~€1.3B) - FC Barcelona — El estadio de fútbol más grande de Europa",
-      summary: "• Liderazgo del equipo de modelado in situ de Plenum en GHESA, garantizando la calidad de los entregables en la producción BIM arquitectónica dentro de un modelo federado de alta densidad gobernado por flujos de trabajo ISO 19650 y CDE.\n• Prestación de soporte técnico remoto continuo tras el despliegue.\n• El compromiso abarcó las fases de Modelador y BIM Manager en Plenum.",
+      summary: "• Dirección del equipo de modelado in situ de Plenum en GHESA, garantizando la calidad de los entregables de producción BIM arquitectónica dentro de un modelo federado de alta densidad, gobernado por flujos de trabajo ISO 19650 y CDE.\n• Soporte técnico remoto continuo tras el despliegue para asegurar la estabilidad operativa.\n• La asignación abarcó las fases de Modelador y BIM Manager dentro de Plenum.",
       reasonForLeaving: "Reasignación a otros proyectos de alta prioridad dentro de la red de outsourcing de Plenum.",
     },
     {
@@ -86,8 +86,8 @@ export const cvData: CVData = {
       role: "BIM Manager / Responsable de Operaciones",
       location: "España",
       project: "Enlace fijo de Fehmarnbelt — el túnel de carretera y ferrocarril sumergido más largo del mundo (18 km | ~€7.4B), Sede Patrimonial Palacio del Marqués de Salamanca Heritage HQ (~25,000m² | ~€50M), Facultad de Matemáticas UCM (~15,000m²)",
-      summary: "• Dirección de operaciones BIM a nivel de departamento bajo PMBOK / ISO 21502 / Agile, gestionando 4 megaproyectos internacionales concurrentes valorados en más de 7.000 millones de euros.\n• Liderazgo del ciclo de vida completo de la ISO 19650 — validando/reimplementando BEPs, definiendo LoIN, administrando CDE, evaluando capacidades de licitación y gestionando la adquisición de talento para un equipo multidisciplinario de 16 personas (Arquitectura, Estructura, MEP).\n• Coordinación de Open BIM en 22 segmentos del túnel de Fehmarnbelt con programación basada en Kanban y reporte directo a los BIM Managers senior de IDOM.\n• Aplicación de QA en todos los entregables en inglés/español, defensa de modelos federados en sesiones ICE con clientes y resolución de cuellos de botella críticos de interoperabilidad, impulsando la productividad del departamento.",
-      reasonForLeaving: "Proyecto insignia del túnel detenido debido a datos de ingeniería pendientes; se mantuvo una fuerte confianza ejecutiva.",
+      summary: "• Dirección de operaciones BIM a nivel departamental bajo PMBOK / ISO 21502 / Agile, gestionando 4 megaproyectos internacionales concurrentes valorados en más de 7.000 millones de euros.\n• Gestión del ciclo de vida completo de la ISO 19650 — validando y reimplementando BEPs, definiendo LoIN, administrando CDE, evaluando capacidades de licitación y dirigiendo la adquisición de talento para un equipo multidisciplinario de 16 personas (Arquitectura, Estructura, MEP).\n• Coordinación Open BIM de 22 segmentos del túnel de Fehmarnbelt con programación basada en Kanban y reporte directo a los BIM Managers senior de IDOM.\n• Aplicación de QA en todos los entregables en inglés/español, defensa de modelos federados en sesiones ICE con clientes y resolución de cuellos de botella críticos de interoperabilidad, impulsando la productividad del departamento.",
+      reasonForLeaving: "Paralización del túnel por datos de ingeniería pendientes; se mantuvo una sólida confianza ejecutiva.",
     },
     {
       dates: "2022-07 a 2023-06",
@@ -97,7 +97,7 @@ export const cvData: CVData = {
       role: "Modelador BIM MEP / Arquitecto",
       location: "España",
       project: "IDOM (Telescopio Gigante de Magallanes ~€1.7B, Hospitales Basurto/Donostia ~380.000m² | ~€550M), Hospital ACH Dakar (~40,000m² | ~€135M), Hoteles ARUP (~10,000m² | ~€40M), GHESA/Limak (Camp Nou)",
-      summary: "• Recurso técnico principal en un volumen extremo de proyectos concurrentes que abarcan Salud, Científico, Hostelería, Deportes, Residencial, Industrial y Transporte — entregando coordinación MEP y arquitectónica bajo plazos implacables.\n• Asunción proactiva de la gestión BIM cuando el BIM Manager existente no podía absorber los proyectos entrantes, coordinando directamente el compromiso del Camp Nou y brindando soporte in situ en Barcelona.\n• Liderazgo de la especificación, adquisición y despliegue de infraestructura crítica de servidores de IT resolviendo cuellos de botella de datos en modelos concurrentes a gran escala.\n• Asesor PMP de confianza del propietario de la empresa en decisiones operativas.\n• Desarrollo de bibliotecas estandarizadas y flujos de trabajo de automatización que se convirtieron en activos del departamento, obteniendo un ascenso acelerado a BIM Manager respaldado por todo el equipo.",
+      summary: "• Recurso técnico principal en un volumen extremo de proyectos concurrentes en los sectores de Salud, Científico, Hostelería, Deportes, Residencial, Industrial y Transporte — ejecutando coordinación MEP y arquitectónica bajo plazos implacables.\n• Asunción proactiva de la gestión BIM ante la saturación del BIM Manager existente, coordinando directamente el compromiso del Camp Nou y prestando soporte in situ en Barcelona.\n• Especificación, adquisición y despliegue de infraestructura crítica de servidores IT, resolviendo cuellos de botella de datos en modelos concurrentes a gran escala.\n• Asesor PMP de confianza del propietario de la empresa en decisiones operativas y estratégicas.\n• Desarrollo de bibliotecas estandarizadas y flujos de automatización que se consolidaron como activos del departamento, obteniendo un ascenso acelerado a BIM Manager respaldado por todo el equipo.",
       reasonForLeaving: "Ascendido a BIM Manager / Responsable de Operaciones.",
     },
     {
@@ -108,7 +108,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "Venezuela",
       project: "Isla Multiespacio High-Rise (~90,000m² | ~€150M) y Cadena de Retail Cameva (~20,000m² | ~€30M Agregado)",
-      summary: "• Entrega de documentación BIM arquitectónica y estructural completa para proyectos de uso mixto — planos, secciones, detalles, renders, visualizaciones y cuantificación de materiales.\n• Supervisión regular de la construcción in situ garantizando la alineación del diseño con la obra.\n• Coordinación multiplataforma con homólogos de ArchiCAD, adquiriendo experiencia fundamental en IFC/Open BIM.",
+      summary: "• Producción de documentación BIM arquitectónica y estructural completa para proyectos de uso mixto — planos, secciones, detalles constructivos, renders, visualizaciones y cuantificación de materiales.\n• Supervisión periódica de la construcción in situ garantizando la correspondencia entre el diseño y la ejecución de obra.\n• Coordinación multiplataforma con homólogos de ArchiCAD, adquiriendo experiencia fundamental en IFC/Open BIM.",
       reasonForLeaving: "Salida para cursar el Máster en Dirección Integrada de Proyectos.",
     },
   ],
@@ -119,7 +119,7 @@ export const cvData: CVData = {
     { role: "Arquitecto en Prácticas", company: "ARCOS 5", year: "2017" },
   ],
   technicalSkills: [
-    { category: "BIM y Coordinación", skills: ["Revit (MEP, Arquitectura, Estructura) – Experto", "Navisworks (Detección de Interferencias)", "AutoCAD 2D/3D"] },
+    { category: "BIM y Coordinación", skills: ["Revit (MEP, Arquitectura, Estructura) – Experto", "Navisworks", "AutoCAD 2D/3D"] },
     { category: "Automatización y Programación", skills: ["Dynamo", "Python", "Currículo de Ciencias de la Computación C 42 Madrid (En curso)"] },
     { category: "Captura de Realidad", skills: ["Flujos de trabajo Scan-to-BIM", "Integración de Nubes de Puntos (LIDAR)"] },
     { category: "Gestión de Proyectos y Costes", skills: ["Microsoft Project", "CYPE", "Presto"] },
@@ -132,7 +132,7 @@ export const cvData: CVData = {
     { degree: "Ciencias de la Computación (En curso)", institution: "42 Madrid - España" },
   ],
   awards: [
-    { title: "Premio a la Excelencia por Logros en el Extranjero", issuer: "Xunta de Galicia (España)", year: "2022", description: "Reconocimiento oficial otorgado por el desempeño académico y profesional en el extranjero" },
+    { title: "Reconocimiento a la Excelencia Exterior", issuer: "Xunta de Galicia (España)", year: "2022", description: "Otorgado por cursar el Máster en Dirección Integrada de Proyectos (PMP) en el extranjero" },
   ],
   certifications: [
     "Experto en Autodesk Revit Architecture",
