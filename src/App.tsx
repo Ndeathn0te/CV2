@@ -89,10 +89,10 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         id="cv-print-area"
         ref={cvRef} 
-        className="w-[210mm] mx-auto bg-white dark:bg-dark-surface shadow-2xl print:shadow-none relative border border-neutral-200 dark:border-dark-border print:border-none min-h-[605mm] flex flex-col transition-colors duration-500"
+        className="w-[210mm] mx-auto bg-white dark:bg-dark-surface shadow-2xl print:shadow-none relative border border-neutral-200 dark:border-dark-border print:border-none min-h-[594mm] flex flex-col transition-colors duration-500"
       >
         {/* Header - Ultra Minimal */}
-        <header className="bg-black dark:bg-black text-white px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <header className="bg-black dark:bg-black text-white px-8 py-3 flex flex-col md:flex-row justify-between items-center gap-3">
           <div className="flex items-center gap-6">
             {cvData.contact.photo && (
               <div className="w-20 h-20 shrink-0 border-2 border-white/20 dark:border-white/10 overflow-hidden transition-all duration-500">
@@ -130,8 +130,8 @@ export default function App() {
         </section>
 
         {/* Summary - Single Line if possible */}
-        <section className="px-9 py-2 bg-neutral-50 dark:bg-dark-bg/50 border-b border-neutral-200 dark:border-dark-border">
-          <p className="text-[7.5pt] leading-snug text-neutral-800 dark:text-neutral-300 italic whitespace-pre-line">
+        <section className="px-9 py-1.5 bg-neutral-50 dark:bg-dark-bg/50 border-b border-neutral-200 dark:border-dark-border">
+          <p className="text-[7pt] leading-snug text-neutral-800 dark:text-neutral-300 italic whitespace-pre-line">
             <span className="text-accent dark:text-accent font-black uppercase text-[7pt] mr-2">Perfil:</span>
             {cvData.summary}
           </p>
@@ -139,14 +139,14 @@ export default function App() {
 
         <div className="grid grid-cols-12 flex-grow">
           {/* Experience Column */}
-          <div className="col-span-8 px-9 py-3 space-y-4 border-r border-neutral-100 dark:border-dark-border">
+          <div className="col-span-8 px-9 py-2 space-y-3 border-r border-neutral-100 dark:border-dark-border">
             <section>
-              <h2 className="text-[8pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">Experiencia</h2>
-              <div className="space-y-3">
+              <h2 className="text-[8pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-1.5 pb-0.5">Experiencia</h2>
+              <div className="space-y-2.5">
                 {cvData.experience.map((exp, idx) => (
                   <div key={idx} className="break-inside-avoid">
                     <div className="flex justify-between items-baseline">
-                      <h3 className="text-[8.5pt] font-black uppercase leading-tight dark:text-white">{exp.role}</h3>
+                      <h3 className="text-[8pt] font-black uppercase leading-tight dark:text-white">{exp.role}</h3>
                       <span className="text-[6.5pt] font-bold text-neutral-500 dark:text-neutral-400">{exp.dates}</span>
                     </div>
                     <div className="flex justify-between text-[6.5pt] font-bold text-neutral-400 dark:text-neutral-500 uppercase mb-0.5">
