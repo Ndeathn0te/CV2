@@ -130,7 +130,7 @@ export default function App() {
         </section>
 
         {/* Summary - Single Line if possible */}
-        <section className="px-8 py-1 bg-neutral-50 dark:bg-dark-bg/50 border-b border-neutral-200 dark:border-dark-border">
+        <section className="px-9 py-2 bg-neutral-50 dark:bg-dark-bg/50 border-b border-neutral-200 dark:border-dark-border">
           <p className="text-[7pt] leading-snug text-neutral-800 dark:text-neutral-300 italic whitespace-pre-line">
             <span className="text-accent dark:text-accent font-black uppercase text-[7pt] mr-2">Perfil:</span>
             {cvData.summary}
@@ -139,10 +139,10 @@ export default function App() {
 
         <div className="grid grid-cols-12 flex-grow">
           {/* Experience Column */}
-          <div className="col-span-8 px-8 py-1.5 space-y-1.5 border-r border-neutral-100 dark:border-dark-border">
+          <div className="col-span-8 px-9 py-3 space-y-3 border-r border-neutral-100 dark:border-dark-border">
             <section>
-              <h2 className="text-[8pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-1 pb-0.5">Experiencia</h2>
-              <div className="space-y-1.5">
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">Experiencia</h2>
+              <div className="space-y-2.5">
                 {cvData.experience.map((exp, idx) => (
                   <div key={idx} className="break-inside-avoid">
                     <div className="flex justify-between items-baseline">
@@ -157,7 +157,7 @@ export default function App() {
                       <ChevronRight size={6} className="mt-0.5 shrink-0" />
                       <p className="text-[6.5pt] font-bold text-neutral-800 dark:text-neutral-200 italic leading-tight">{exp.project}</p>
                     </div>
-                    <p className="text-[7pt] text-neutral-800 dark:text-neutral-300 leading-snug whitespace-pre-line">{exp.summary}</p>
+                    <p className="text-[7pt] text-neutral-800 dark:text-neutral-300 leading-snug whitespace-pre-line mb-1">{exp.summary}</p>
                     {exp.reasonForLeaving && exp.reasonForLeaving !== "N/A - Puesto actual" && (
                       <div className="flex gap-1 items-start bg-neutral-50 dark:bg-dark-bg/20 px-1 py-0.5 border-l-2 border-neutral-200 dark:border-dark-border">
                         <span className="text-[5.5pt] font-black uppercase text-neutral-400 shrink-0 mt-0.5">Salida:</span>
@@ -170,8 +170,8 @@ export default function App() {
             </section>
 
             <section className="break-inside-avoid">
-              <h2 className="text-[8pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-1 pb-0.5">Historial</h2>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-0.5">
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">Historial</h2>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
                 {cvData.earlierExperience.map((exp, idx) => (
                   <div key={idx} className="flex justify-between items-start text-[7.5pt] border-b border-neutral-50 dark:border-dark-border/50 pb-0.5 gap-2">
                     <span className="font-bold uppercase leading-tight text-neutral-800 dark:text-neutral-200">{exp.role} @ {exp.company}</span>
@@ -183,12 +183,12 @@ export default function App() {
           </div>
 
           {/* Sidebar Column */}
-          <aside className="col-span-4 bg-neutral-50 dark:bg-dark-bg/20 px-6 py-1.5 space-y-2.5 print:bg-white min-h-full">
+          <aside className="col-span-4 bg-neutral-50 dark:bg-dark-bg/20 px-8 py-3 space-y-4 print:bg-white min-h-full">
             <section className="break-inside-avoid">
-              <h2 className="text-[8pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-1 flex items-center gap-1">
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
                 <Wrench size={8} /> Especialización
               </h2>
-              <div className="space-y-1">
+              <div className="space-y-1.5">
                 {cvData.technicalSkills.map((cat, idx) => (
                   <div key={idx}>
                     <h3 className="text-[7pt] font-bold uppercase text-neutral-900 dark:text-neutral-100 mb-0.5">{cat.category}</h3>
@@ -203,10 +203,10 @@ export default function App() {
             </section>
 
             <section className="break-inside-avoid">
-              <h2 className="text-[8pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-1 flex items-center gap-1">
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
                 <GraduationCap size={8} /> Educación
               </h2>
-              <div className="space-y-1.5">
+              <div className="space-y-2.5">
                 {cvData.education.map((edu, idx) => (
                   <div key={idx}>
                     <p className="text-[8pt] font-bold uppercase leading-tight text-neutral-900 dark:text-neutral-100">{edu.degree}</p>
@@ -217,17 +217,17 @@ export default function App() {
             </section>
 
             <section className="break-inside-avoid">
-              <h2 className="text-[8pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-1 flex items-center gap-1">
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
                 <Award size={8} /> Reconocimientos
               </h2>
               {cvData.awards.map((award, idx) => (
-                <div key={idx} className="bg-black dark:bg-neutral-800 text-white p-1 mb-1 border border-transparent dark:border-dark-border">
+                <div key={idx} className="bg-black dark:bg-neutral-800 text-white p-1.5 mb-1.5 border border-transparent dark:border-dark-border">
                   <p className="text-[7.5pt] font-bold uppercase leading-tight">{award.title}</p>
                   <p className="text-[6.5pt] text-neutral-400 dark:text-neutral-500 uppercase">{award.issuer} / {award.year}</p>
                   {award.description && <p className="text-[6pt] text-neutral-500 dark:text-neutral-400 italic leading-tight text-justify">{award.description}</p>}
                 </div>
               ))}
-              <div className="mt-1">
+              <div className="mt-2.5">
                 <h3 className="text-[7pt] font-bold uppercase text-neutral-400 dark:text-neutral-500 mb-1">Certificaciones</h3>
                 <ul className="space-y-0.5">
                   {cvData.certifications.map((cert, idx) => (
@@ -240,10 +240,10 @@ export default function App() {
             </section>
 
             <section className="break-inside-avoid">
-              <h2 className="text-[8pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-1 flex items-center gap-1">
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
                 <Languages size={8} /> Idiomas
               </h2>
-              <div className="space-y-1">
+              <div className="space-y-1.5">
                 {cvData.languages.map((lang, idx) => (
                   <div key={idx} className="flex justify-between items-center border-b border-neutral-200 dark:border-dark-border text-[8pt] pb-1">
                     <span className="font-bold uppercase text-neutral-800 dark:text-neutral-200">{lang.language}</span>
@@ -255,7 +255,7 @@ export default function App() {
           </aside>
         </div>
 
-        <footer className="mt-auto bg-black text-white px-8 py-1.5 flex justify-between items-center text-[6pt] uppercase tracking-widest">
+        <footer className="mt-auto bg-black text-white px-9 py-2 flex justify-between items-center text-[6pt] uppercase tracking-widest">
           <span>Armando González • Portafolio CV • 2026</span>
           <div className="flex gap-2">
             <div className="w-4 h-[1px] bg-neutral-800 rotate-45" />
