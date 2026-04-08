@@ -92,10 +92,10 @@ export default function App() {
         className="w-[210mm] mx-auto bg-white dark:bg-dark-surface shadow-2xl print:shadow-none relative border border-neutral-200 dark:border-dark-border print:border-none min-h-[605mm] flex flex-col transition-colors duration-500"
       >
         {/* Header - Ultra Minimal */}
-        <header className="bg-black dark:bg-black text-white px-8 py-5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <header className="bg-black dark:bg-black text-white px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-6">
             {cvData.contact.photo && (
-              <div className="w-22 h-22 shrink-0 border-2 border-white/20 dark:border-white/10 overflow-hidden transition-all duration-500">
+              <div className="w-20 h-20 shrink-0 border-2 border-white/20 dark:border-white/10 overflow-hidden transition-all duration-500">
                 <img 
                   src={cvData.contact.photo} 
                   alt={cvData.name}
@@ -119,19 +119,19 @@ export default function App() {
         </header>
 
         {/* Hero Metrics - C-Level Snapshot */}
-        <section className="bg-neutral-900 border-b-4 border-accent text-white px-9 py-2 flex justify-between items-center text-[7pt] uppercase tracking-widest font-bold">
-          <div className="flex flex-col"><span className="text-neutral-400 text-[6pt]">Valor de Programa</span><span className="text-white">&gt; €10.000 Millones</span></div>
-          <div className="w-px h-6 bg-neutral-700"></div>
-          <div className="flex flex-col"><span className="text-neutral-400 text-[6pt]">Área Coordinada</span><span className="text-white">&gt; 500.000 m²</span></div>
-          <div className="w-px h-6 bg-neutral-700"></div>
-          <div className="flex flex-col"><span className="text-neutral-400 text-[6pt]">Liderazgo Equipos</span><span className="text-white">Hasta 16 profesionales</span></div>
-          <div className="w-px h-6 bg-neutral-700"></div>
-          <div className="flex flex-col"><span className="text-neutral-400 text-[6pt]">Certificación Base</span><span className="text-white">PMP / ISO 19650</span></div>
+        <section className="bg-neutral-900 border-b-2 border-accent text-white px-9 py-1.5 flex justify-between items-center text-[6.5pt] uppercase tracking-widest font-bold">
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Valor de Programa</span><span className="text-white">&gt; €10.000 Millones</span></div>
+          <div className="w-px h-5 bg-neutral-700"></div>
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Área Coordinada</span><span className="text-white">&gt; 500.000 m²</span></div>
+          <div className="w-px h-5 bg-neutral-700"></div>
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Liderazgo Equipos</span><span className="text-white">Hasta 16 profesionales</span></div>
+          <div className="w-px h-5 bg-neutral-700"></div>
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Certificación Base</span><span className="text-white">PMP / ISO 19650</span></div>
         </section>
 
         {/* Summary - Single Line if possible */}
-        <section className="px-9 py-3 bg-neutral-50 dark:bg-dark-bg/50 border-b border-neutral-200 dark:border-dark-border">
-          <p className="text-[8pt] leading-tight text-neutral-800 dark:text-neutral-300 italic whitespace-pre-line">
+        <section className="px-9 py-2 bg-neutral-50 dark:bg-dark-bg/50 border-b border-neutral-200 dark:border-dark-border">
+          <p className="text-[7.5pt] leading-snug text-neutral-800 dark:text-neutral-300 italic whitespace-pre-line">
             <span className="text-accent dark:text-accent font-black uppercase text-[7pt] mr-2">Perfil:</span>
             {cvData.summary}
           </p>
@@ -139,10 +139,10 @@ export default function App() {
 
         <div className="grid grid-cols-12 flex-grow">
           {/* Experience Column */}
-          <div className="col-span-8 px-9 py-6 space-y-7 border-r border-neutral-100 dark:border-dark-border">
+          <div className="col-span-8 px-9 py-4 space-y-5 border-r border-neutral-100 dark:border-dark-border">
             <section>
-              <h2 className="text-[9pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-4 pb-1">Experiencia</h2>
-              <div className="space-y-8">
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-3 pb-1">Experiencia</h2>
+              <div className="space-y-5">
                 {cvData.experience.map((exp, idx) => (
                   <div key={idx} className="break-inside-avoid">
                     <div className="flex justify-between items-baseline">
@@ -157,7 +157,7 @@ export default function App() {
                       <ChevronRight size={7} className="mt-1 shrink-0" />
                       <p className="text-[7pt] font-bold text-neutral-800 dark:text-neutral-200 italic leading-tight">{exp.project}</p>
                     </div>
-                    <p className="text-[8pt] text-neutral-800 dark:text-neutral-300 leading-relaxed whitespace-pre-line mb-2">{exp.summary}</p>
+                    <p className="text-[7.5pt] text-neutral-800 dark:text-neutral-300 leading-snug whitespace-pre-line mb-1">{exp.summary}</p>
                     {exp.reasonForLeaving && exp.reasonForLeaving !== "N/A - Puesto actual" && (
                       <div className="flex gap-1.5 items-start bg-neutral-50 dark:bg-dark-bg/20 p-1 border-l-2 border-neutral-200 dark:border-dark-border mt-1">
                         <span className="text-[6pt] font-black uppercase text-neutral-400 shrink-0 mt-0.5">Motivo de salida:</span>
