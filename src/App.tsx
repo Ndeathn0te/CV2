@@ -157,7 +157,7 @@ export default function App() {
                       <ChevronRight size={7} className="mt-1 shrink-0" />
                       <p className="text-[7pt] font-bold text-neutral-800 dark:text-neutral-200 italic leading-tight">{exp.project}</p>
                     </div>
-                    <p className="text-[8pt] text-neutral-800 dark:text-neutral-300 leading-relaxed text-justify mb-2">{exp.summary}</p>
+                    <p className="text-[8pt] text-neutral-800 dark:text-neutral-300 leading-relaxed whitespace-pre-line mb-2">{exp.summary}</p>
                     {exp.reasonForLeaving && exp.reasonForLeaving !== "N/A - Puesto actual" && (
                       <div className="flex gap-1.5 items-start bg-neutral-50 dark:bg-dark-bg/20 p-1 border-l-2 border-neutral-200 dark:border-dark-border mt-1">
                         <span className="text-[6pt] font-black uppercase text-neutral-400 shrink-0 mt-0.5">Motivo de salida:</span>

@@ -10,7 +10,7 @@ export const cvData: CVData = {
     linkedin: "linkedin.com/in/armando-gonzalez-tapiador",
     photo: "https://media.licdn.com/dms/image/v2/D4D03AQEW8hzfDwtP8A/profile-displayphoto-shrink_800_800/B4DZSzL4cLHkAc-/0/1738173025110?e=1775692800&v=beta&t=GzVQ_npAg3v4AuVE6Yr-8slyTcuNGm_Hratov_YpwCY",
   },
-  summary: "BIM Manager / Coordinador y Director de Proyectos PMP con más de 5 años entregando proyectos internacionales complejos en los sectores de Salud, Centros de Datos a Hiperescala, Infraestructura, Científico, Deportes y Defensa. Exposición a más de 10.000 millones de euros en valor de programa acumulado y más de 500.000 m² de área construida coordinada. Trayectoria dirigiendo operaciones a nivel de departamento bajo PMBOK / ISO 21502 / ISO 19650 — desde la gestión del ciclo de vida del BEP y la adquisición de talento hasta sesiones ICE con clientes y gobernanza de QA. Liderando equipos multidisciplinarios (hasta 16 miembros) en megaproyectos concurrentes en entornos bilingües (inglés/español), operando como un vínculo de confianza entre el liderazgo ejecutivo, los equipos de ingeniería y los clientes de Nivel 1.",
+  summary: "• BIM Manager / Coordinador y Director de Proyectos PMP con más de 5 años entregando proyectos internacionales complejos en los sectores de Salud, Centros de Datos a Hiperescala, Infraestructura, Científico, Deportes y Defensa.\n• Exposición a más de 10.000 millones de euros en valor de programa acumulado y más de 500.000 m² de área construida coordinada.\n• Trayectoria dirigiendo operaciones a nivel de departamento bajo PMBOK / ISO 21502 / ISO 19650 — desde la gestión del ciclo de vida del BEP y la adquisición de talento hasta sesiones ICE con clientes y gobernanza de QA.\n• Liderando equipos multidisciplinarios (hasta 16 miembros) en megaproyectos concurrentes en entornos bilingües (inglés/español), operando como un vínculo de confianza entre el liderazgo ejecutivo, los equipos de ingeniería y los clientes de Nivel 1.",
   experience: [
     {
       dates: "2025-08 a la actualidad",
@@ -20,7 +20,7 @@ export const cvData: CVData = {
       role: "Coordinador BIM MEP",
       location: "Alicante, España",
       project: "Ampliación del Hospital de Orihuela (~45.000m² | ~€70M) - Departamento de Salud de la Vega Baja",
-      summary: "Único recurso BIM para el alcance de climatización MEP de Germania dentro de una ampliación sanitaria de 70 millones de euros (Valnu → Rover → Germania), entregando coordinación de extremo a extremo: modelado de sistemas mecánicos en cubierta, cuantificación por fases (construido vs. pendiente) y verificación de construcción in situ garantizando la alineación del diseño con la obra. Establecimiento de estándares BIM funcionales mínimos (LoIN/BEP) adaptados a las necesidades operativas, gestionando flujos de trabajo de modelos federados para la adquisición basada en datos y la validación de la cadena de suministro.",
+      summary: "• Único recurso BIM para el alcance de climatización MEP de Germania dentro de una ampliación sanitaria de 70 millones de euros (Valnu → Rover → Germania), entregando coordinación de extremo a extremo: modelado de sistemas mecánicos en cubierta, cuantificación por fases (construido vs. pendiente) y verificación de construcción in situ garantizando la alineación del diseño con la obra.\n• Establecimiento de estándares BIM funcionales mínimos (LoIN/BEP) adaptados a las necesidades operativas, gestionando flujos de trabajo de modelos federados para la adquisición basada en datos y la validación de la cadena de suministro.",
       reasonForLeaving: "N/A - Puesto actual",
     },
     {
@@ -31,7 +31,7 @@ export const cvData: CVData = {
       role: "Consultor BIM AEC",
       location: "Madrid, España",
       project: "Diversos clientes de ingeniería y arquitectura de Nivel 1",
-      summary: "Diagnóstico de flujos de trabajo BIM de clientes y niveles de madurez para ofrecer demostraciones específicas, formación y estrategias de adopción — posicionando Environment for Revit, NTI for Revit y Realtime LCA a través de Speckle para evaluaciones de carbono durante todo el ciclo de vida. Preparación de empresas para la refundición obligatoria de la EPBD (UE 2024/1275) y las obligaciones de informes WLC de Level(s) efectivas en 2028. Guía en implementaciones de ISO 19650/CDE y coordinación multidisciplinaria para elevar los estándares de entrega interna.",
+      summary: "• Diagnóstico de flujos de trabajo BIM de clientes y niveles de madurez para ofrecer demostraciones específicas, formación y estrategias de adopción — posicionando Environment for Revit, NTI for Revit y Realtime LCA a través de Speckle para evaluaciones de carbono durante todo el ciclo de vida.\n• Preparación de empresas para la refundición obligatoria de la EPBD (UE 2024/1275) y las obligaciones de informes WLC de Level(s) efectivas en 2028.\n• Guía en implementaciones de ISO 19650/CDE y coordinación multidisciplinaria para elevar los estándares de entrega interna.",
       reasonForLeaving: "Acepté oferta para regresar a Germania para un proyecto hospitalario a gran escala.",
     },
     {
@@ -42,7 +42,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM / Especialista MEP",
       location: "España",
       project: "Centros de Datos a Hiperescala (~20.000m² IT por instalación | ~€6-10B Programa Regional) - Microsoft y Amazon / Infraestructura de Defensa de la OTAN (~250.000m² | ~€0.8B) vía AECOM",
-      summary: "Entrega de paquetes de diseño técnico MEP y coordinación espacial (LOD 300-350) en inglés y español para centros de datos a hiperescala de misión crítica e infraestructura de defensa bajo marcos de AECOM, estándares USACE y protocolos de seguridad protegidos por NDA. Seguimiento de entregables de hitos por fases (30/60/90/100%).",
+      summary: "• Entrega de paquetes de diseño técnico MEP y coordinación espacial (LOD 300-350) en inglés y español para centros de datos a hiperescala de misión crítica e infraestructura de defensa bajo marcos de AECOM, estándares USACE y protocolos de seguridad protegidos por NDA.\n• Seguimiento de entregables de hitos por fases (30/60/90/100%).",
       reasonForLeaving: "Finalización de la fase del proyecto; transición a consultoría BIM con el apoyo de la dirección.",
     },
     {
@@ -53,7 +53,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "España / Bélgica",
       project: "Infraestructura de Defensa de la OTAN (~250.000m² | ~€0.8B) - Bélgica vía AECOM",
-      summary: "Diseño y coordinación BIM de despliegue rápido para instalaciones de defensa de la OTAN bajo protocolos AECOM/USACE. Navegación de entrega por fases en un entorno bilingüe, asegurando un compromiso a largo plazo.",
+      summary: "• Diseño y coordinación BIM de despliegue rápido para instalaciones de defensa de la OTAN bajo protocolos AECOM/USACE.\n• Navegación de entrega por fases en un entorno bilingüe, asegurando un compromiso a largo plazo.",
       reasonForLeaving: "AECOM redujo la plantilla externa; reincorporación para un puesto MEP ampliado a través de Exceltic.",
     },
     {
@@ -64,7 +64,7 @@ export const cvData: CVData = {
       role: "Modelador BIM MEP / CAD",
       location: "Madrid, España",
       project: "Diversas instalaciones residenciales, intercambiadores de transporte e industriales",
-      summary: "Apoyo a los flujos de trabajo de pre-construcción mediante la preparación de distribuciones espaciales MEP en CAD, planos de producción y mediciones manuales en múltiples proyectos de ritmo rápido.",
+      summary: "• Apoyo a los flujos de trabajo de pre-construcción mediante la preparación de distribuciones espaciales MEP en CAD, planos de producción y mediciones manuales en múltiples proyectos de ritmo rápido.",
       reasonForLeaving: "Acepté un puesto centrado en proyectos de defensa internacionales que ofrecían un mayor alcance técnico.",
     },
     {
@@ -75,7 +75,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "España",
       project: "Remodelación del Spotify Camp Nou (~300.000m² | ~€1.3B) - FC Barcelona — El estadio de fútbol más grande de Europa",
-      summary: "Liderazgo del equipo de modelado in situ de Plenum en GHESA, garantizando la calidad de los entregables en la producción BIM arquitectónica dentro de un modelo federado de alta densidad gobernado por flujos de trabajo ISO 19650 y CDE. Prestación de soporte técnico remoto continuo tras el despliegue. El compromiso abarcó las fases de Modelador y BIM Manager en Plenum.",
+      summary: "• Liderazgo del equipo de modelado in situ de Plenum en GHESA, garantizando la calidad de los entregables en la producción BIM arquitectónica dentro de un modelo federado de alta densidad gobernado por flujos de trabajo ISO 19650 y CDE.\n• Prestación de soporte técnico remoto continuo tras el despliegue.\n• El compromiso abarcó las fases de Modelador y BIM Manager en Plenum.",
       reasonForLeaving: "Reasignación a otros proyectos de alta prioridad dentro de la red de outsourcing de Plenum.",
     },
     {
@@ -86,7 +86,7 @@ export const cvData: CVData = {
       role: "BIM Manager / Responsable de Operaciones",
       location: "España",
       project: "Enlace fijo de Fehmarnbelt — el túnel de carretera y ferrocarril sumergido más largo del mundo (18 km | ~€7.4B), Sede Patrimonial Palacio del Marqués de Salamanca Heritage HQ (~25,000m² | ~€50M), Facultad de Matemáticas UCM (~15,000m²)",
-      summary: "Dirección de operaciones BIM a nivel de departamento bajo PMBOK / ISO 21502 / Agile, gestionando 4 megaproyectos internacionales concurrentes valorados en más de 7.000 millones de euros. Liderazgo del ciclo de vida completo de la ISO 19650 — validando/reimplementando BEPs, definiendo LoIN, administrando CDE, evaluando capacidades de licitación y gestionando la adquisición de talento para un equipo multidisciplinario de 16 personas (Arquitectura, Estructura, MEP). Coordinación de Open BIM en 22 segmentos del túnel de Fehmarnbelt con programación basada en Kanban y reporte directo a los BIM Managers senior de IDOM. Aplicación de QA en todos los entregables en inglés/español, defensa de modelos federados en sesiones ICE con clientes y resolución de cuellos de botella críticos de interoperabilidad, impulsando la productividad del departamento.",
+      summary: "• Dirección de operaciones BIM a nivel de departamento bajo PMBOK / ISO 21502 / Agile, gestionando 4 megaproyectos internacionales concurrentes valorados en más de 7.000 millones de euros.\n• Liderazgo del ciclo de vida completo de la ISO 19650 — validando/reimplementando BEPs, definiendo LoIN, administrando CDE, evaluando capacidades de licitación y gestionando la adquisición de talento para un equipo multidisciplinario de 16 personas (Arquitectura, Estructura, MEP).\n• Coordinación de Open BIM en 22 segmentos del túnel de Fehmarnbelt con programación basada en Kanban y reporte directo a los BIM Managers senior de IDOM.\n• Aplicación de QA en todos los entregables en inglés/español, defensa de modelos federados en sesiones ICE con clientes y resolución de cuellos de botella críticos de interoperabilidad, impulsando la productividad del departamento.",
       reasonForLeaving: "Proyecto insignia del túnel detenido debido a datos de ingeniería pendientes; se mantuvo una fuerte confianza ejecutiva.",
     },
     {
@@ -97,7 +97,7 @@ export const cvData: CVData = {
       role: "Modelador BIM MEP / Arquitecto",
       location: "España",
       project: "IDOM (Telescopio Gigante de Magallanes ~€1.7B, Hospitales Basurto/Donostia ~380.000m² | ~€550M), Hospital ACH Dakar (~40,000m² | ~€135M), Hoteles ARUP (~10,000m² | ~€40M), GHESA/Limak (Camp Nou)",
-      summary: "Recurso técnico principal en un volumen extremo de proyectos concurrentes que abarcan Salud, Científico, Hostelería, Deportes, Residencial, Industrial y Transporte — entregando coordinación MEP y arquitectónica bajo plazos implacables. Asunción proactiva de la gestión BIM cuando el BIM Manager existente no podía absorber los proyectos entrantes, coordinando directamente el compromiso del Camp Nou y brindando soporte in situ en Barcelona. Liderazgo de la especificación, adquisición y despliegue de infraestructura crítica de servidores de IT resolviendo cuellos de botella de datos en modelos concurrentes a gran escala. Asesor PMP de confianza del propietario de la empresa en decisiones operativas. Desarrollo de bibliotecas estandarizadas y flujos de trabajo de automatización que se convirtieron en activos del departamento, obteniendo un ascenso acelerado a BIM Manager respaldado por todo el equipo.",
+      summary: "• Recurso técnico principal en un volumen extremo de proyectos concurrentes que abarcan Salud, Científico, Hostelería, Deportes, Residencial, Industrial y Transporte — entregando coordinación MEP y arquitectónica bajo plazos implacables.\n• Asunción proactiva de la gestión BIM cuando el BIM Manager existente no podía absorber los proyectos entrantes, coordinando directamente el compromiso del Camp Nou y brindando soporte in situ en Barcelona.\n• Liderazgo de la especificación, adquisición y despliegue de infraestructura crítica de servidores de IT resolviendo cuellos de botella de datos en modelos concurrentes a gran escala.\n• Asesor PMP de confianza del propietario de la empresa en decisiones operativas.\n• Desarrollo de bibliotecas estandarizadas y flujos de trabajo de automatización que se convirtieron en activos del departamento, obteniendo un ascenso acelerado a BIM Manager respaldado por todo el equipo.",
       reasonForLeaving: "Ascendido a BIM Manager / Responsable de Operaciones.",
     },
     {
@@ -108,7 +108,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "Venezuela",
       project: "Isla Multiespacio High-Rise (~90,000m² | ~€150M) y Cadena de Retail Cameva (~20,000m² | ~€30M Agregado)",
-      summary: "Entrega de documentación BIM arquitectónica y estructural completa para proyectos de uso mixto — planos, secciones, detalles, renders, visualizaciones y cuantificación de materiales. Supervisión regular de la construcción in situ garantizando la alineación del diseño con la obra. Coordinación multiplataforma con homólogos de ArchiCAD, adquiriendo experiencia fundamental en IFC/Open BIM.",
+      summary: "• Entrega de documentación BIM arquitectónica y estructural completa para proyectos de uso mixto — planos, secciones, detalles, renders, visualizaciones y cuantificación de materiales.\n• Supervisión regular de la construcción in situ garantizando la alineación del diseño con la obra.\n• Coordinación multiplataforma con homólogos de ArchiCAD, adquiriendo experiencia fundamental en IFC/Open BIM.",
       reasonForLeaving: "Me fui para cursar el Máster en Dirección Integrada de Proyectos.",
     },
   ],
