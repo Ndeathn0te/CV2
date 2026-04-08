@@ -13,13 +13,16 @@ import {
   FileText,
   ExternalLink,
   Moon,
-  Sun
+  Sun,
+  Globe
 } from "lucide-react";
-import { cvData } from "./data";
+import { cvData as cvDataEs } from "./data";
+import { cvDataEn } from "./dataEn";
 
 export default function App() {
   const cvRef = useRef<HTMLDivElement>(null);
   const [isDarkMode, setIsDarkMode] = useState(false); // Default to Light/Print mode
+  const [lang, setLang] = useState<'es' | 'en'>('es');
 
   // Auto-print if the URL has ?print=true (useful when opening in a new tab)
   useEffect(() => {
@@ -43,6 +46,38 @@ export default function App() {
   };
 
   const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+  const toggleLang = () => setLang(lang === 'es' ? 'en' : 'es');
+
+  const cvData = lang === 'es' ? cvDataEs : cvDataEn;
+  
+  const labels = {
+    es: {
+      profile: "Perfil:",
+      experience: "Experiencia",
+      history: "Historial",
+      specialization: "Especialización",
+      education: "Educación",
+      awards: "Reconocimientos",
+      certifications: "Certificaciones",
+      languages: "Idiomas",
+      leaving: "Salida:",
+      metrics: ["Valor de Programa", "Área Coordinada", "Liderazgo Equipos", "Certificación Base"]
+    },
+    en: {
+      profile: "Profile:",
+      experience: "Experience",
+      history: "Career History",
+      specialization: "Specialization",
+      education: "Education",
+      awards: "Awards & Recognitions",
+      certifications: "Certifications",
+      languages: "Languages",
+      leaving: "Leaving:",
+      metrics: ["Program Value", "Coordinated Area", "Team Leadership", "Core Certification"]
+    }
+  };
+
+  const t = labels[lang];
 
   return (
     <div className={`${isDarkMode ? "dark" : ""} min-h-screen transition-colors duration-500 bg-neutral-100 dark:bg-dark-bg font-sans text-neutral-900 dark:text-neutral-100 p-2 print:p-0 print:bg-white`}>
@@ -65,6 +100,19 @@ export default function App() {
               {isDarkMode ? <Moon size={20} className="text-blue-400" /> : <Sun size={20} className="text-amber-500" />}
             </motion.div>
           </AnimatePresence>
+        </motion.button>
+
+        <motion.button 
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={toggleLang}
+          title={lang === 'es' ? "Switch to English" : "Cambiar a Español"}
+          className="bg-accent dark:bg-accent text-white p-4 rounded-full shadow-2xl flex items-center justify-center border border-accent/80 backdrop-blur-md bg-opacity-80"
+        >
+          <Globe size={20} />
+          <span className="absolute -top-2 -right-2 bg-neutral-900 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full border border-neutral-700">
+            {lang === 'es' ? 'EN' : 'ES'}
+          </span>
         </motion.button>
 
         <motion.button 
@@ -120,19 +168,19 @@ export default function App() {
 
         {/* Hero Metrics - C-Level Snapshot */}
         <section className="bg-neutral-900 border-b-2 border-accent text-white px-8 py-1 flex justify-between items-center text-[6.5pt] uppercase tracking-widest font-bold">
-          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Valor de Programa</span><span className="text-white">&gt; €10.000 Millones</span></div>
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">{t.metrics[0]}</span><span className="text-white">&gt; €10.000 Millones</span></div>
           <div className="w-px h-5 bg-neutral-700"></div>
-          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Área Coordinada</span><span className="text-white">&gt; 500.000 m²</span></div>
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">{t.metrics[1]}</span><span className="text-white">&gt; 500.000 m²</span></div>
           <div className="w-px h-5 bg-neutral-700"></div>
-          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Liderazgo Equipos</span><span className="text-white">Hasta 16 profesionales</span></div>
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">{t.metrics[2]}</span><span className="text-white">{lang === 'es' ? 'Hasta 16 profesionales' : 'Up to 16 professionals'}</span></div>
           <div className="w-px h-5 bg-neutral-700"></div>
-          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Certificación Base</span><span className="text-white">PMP / ISO 19650</span></div>
+          <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">{t.metrics[3]}</span><span className="text-white">PMP / ISO 19650</span></div>
         </section>
 
         {/* Summary - Single Line if possible */}
         <section className="px-9 py-2 bg-neutral-50 dark:bg-dark-bg/50 border-b border-neutral-200 dark:border-dark-border">
           <p className="text-[7pt] leading-snug text-neutral-800 dark:text-neutral-300 italic whitespace-pre-line">
-            <span className="text-accent dark:text-accent font-black uppercase text-[7pt] mr-2">Perfil:</span>
+            <span className="text-accent dark:text-accent font-black uppercase text-[7pt] mr-2">{t.profile}</span>
             {cvData.summary}
           </p>
         </section>
@@ -141,7 +189,7 @@ export default function App() {
           {/* Experience Column */}
           <div className="col-span-8 px-9 py-3 space-y-3 border-r border-neutral-100 dark:border-dark-border">
             <section>
-              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">Experiencia</h2>
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">{t.experience}</h2>
               <div className="space-y-2.5">
                 {cvData.experience.map((exp, idx) => (
                   <div key={idx} className="break-inside-avoid">
@@ -158,9 +206,9 @@ export default function App() {
                       <p className="text-[6.5pt] font-bold text-neutral-800 dark:text-neutral-200 italic leading-tight">{exp.project}</p>
                     </div>
                     <p className="text-[7pt] text-neutral-800 dark:text-neutral-300 leading-snug whitespace-pre-line mb-1">{exp.summary}</p>
-                    {exp.reasonForLeaving && exp.reasonForLeaving !== "N/A - Puesto actual" && (
+                    {exp.reasonForLeaving && exp.reasonForLeaving !== "N/A - Puesto actual" && exp.reasonForLeaving !== "N/A - Current Position" && (
                       <div className="flex gap-1 items-start bg-neutral-50 dark:bg-dark-bg/20 px-1 py-0.5 border-l-2 border-neutral-200 dark:border-dark-border">
-                        <span className="text-[5.5pt] font-black uppercase text-neutral-400 shrink-0 mt-0.5">Salida:</span>
+                        <span className="text-[5.5pt] font-black uppercase text-neutral-400 shrink-0 mt-0.5">{t.leaving}</span>
                         <p className="text-[6.5pt] text-neutral-500 dark:text-neutral-500 italic leading-tight">{exp.reasonForLeaving}</p>
                       </div>
                     )}
@@ -170,7 +218,7 @@ export default function App() {
             </section>
 
             <section className="break-inside-avoid">
-              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">Historial</h2>
+              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">{t.history}</h2>
               <div className="grid grid-cols-2 gap-x-4 gap-y-1">
                 {cvData.earlierExperience.map((exp, idx) => (
                   <div key={idx} className="flex justify-between items-start text-[7.5pt] border-b border-neutral-50 dark:border-dark-border/50 pb-0.5 gap-2">
@@ -186,7 +234,7 @@ export default function App() {
           <aside className="col-span-4 bg-neutral-50 dark:bg-dark-bg/20 px-8 py-3 space-y-4 print:bg-white min-h-full">
             <section className="break-inside-avoid">
               <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
-                <Wrench size={8} /> Especialización
+                <Wrench size={8} /> {t.specialization}
               </h2>
               <div className="space-y-1.5">
                 {cvData.technicalSkills.map((cat, idx) => (
@@ -204,7 +252,7 @@ export default function App() {
 
             <section className="break-inside-avoid">
               <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
-                <GraduationCap size={8} /> Educación
+                <GraduationCap size={8} /> {t.education}
               </h2>
               <div className="space-y-2.5">
                 {cvData.education.map((edu, idx) => (
@@ -218,7 +266,7 @@ export default function App() {
 
             <section className="break-inside-avoid">
               <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
-                <Award size={8} /> Reconocimientos
+                <Award size={8} /> {t.awards}
               </h2>
               {cvData.awards.map((award, idx) => (
                 <div key={idx} className="bg-black dark:bg-neutral-800 text-white p-1.5 mb-1.5 border border-transparent dark:border-dark-border">
@@ -228,7 +276,7 @@ export default function App() {
                 </div>
               ))}
               <div className="mt-2.5">
-                <h3 className="text-[7pt] font-bold uppercase text-neutral-400 dark:text-neutral-500 mb-1">Certificaciones</h3>
+                <h3 className="text-[7pt] font-bold uppercase text-neutral-400 dark:text-neutral-500 mb-1">{t.certifications}</h3>
                 <ul className="space-y-0.5">
                   {cvData.certifications.map((cert, idx) => (
                     <li key={idx} className="text-[7pt] text-neutral-700 dark:text-neutral-400 uppercase flex items-start gap-1">
@@ -241,7 +289,7 @@ export default function App() {
 
             <section className="break-inside-avoid">
               <h2 className="text-[8.5pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
-                <Languages size={8} /> Idiomas
+                <Languages size={8} /> {t.languages}
               </h2>
               <div className="space-y-1.5">
                 {cvData.languages.map((lang, idx) => (
@@ -256,7 +304,7 @@ export default function App() {
         </div>
 
         <footer className="mt-auto bg-black text-white px-9 py-2 flex justify-between items-center text-[6pt] uppercase tracking-widest">
-          <span>Armando González • Portafolio CV • 2026</span>
+          <span>{lang === 'es' ? 'Armando González • Portafolio CV • 2026' : 'Armando Gonzalez • CV Portfolio • 2026'}</span>
           <div className="flex gap-2">
             <div className="w-4 h-[1px] bg-neutral-800 rotate-45" />
             <div className="w-4 h-[1px] bg-neutral-800 rotate-45" />
