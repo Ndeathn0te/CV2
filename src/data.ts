@@ -20,7 +20,7 @@ export const cvData: CVData = {
       role: "Coordinador BIM MEP",
       location: "Alicante, España",
       project: "Ampliación del Hospital de Orihuela (~45.000m² | ~€70M)",
-      summary: "• Coordinación BIM end-to-end (HVAC) para proyecto hospitalario liderado por UTE Rover.\n• Implementación de estándares BIM (LoIN/BEP) optimizados para fabricación y obra.\n• Generación de mediciones precisas a partir del modelo federado para justificación financiera de certificaciones de obra.",
+      summary: "• Único recurso BIM inter-empresa (Valnu → Rover → Germania) para el alcance HVAC MEP en ampliación sanitaria crítica.\n• Coordinación end-to-end: modelado de sistemas mecánicos en cubierta, cuantificación por fases y verificación in situ.\n• Establecimiento de estándares BIM funcionales mínimos (LoIN/BEP) adaptados a necesidades operativas reales.\n• Gestión de flujos de trabajo de modelos federados para adquisición basada en datos y validación de suministro.",
       reasonForLeaving: "N/A - Puesto actual",
     },
     {
@@ -31,7 +31,7 @@ export const cvData: CVData = {
       role: "Consultor BIM AEC",
       location: "Madrid, España",
       project: "Diversos perfiles Tier 1 (AEC)",
-      summary: "• Diagnóstico de madurez BIM y estrategia de adopción de software para empresas del sector.\n• Implementación de metodologías para Life Cycle Assessment (LCA) e informes de carbono (EPBD UE).\n• Auditoría de modelos y flujos de trabajo bajo norma ISO 19650.",
+      summary: "• Diagnóstico de madurez BIM y flujos de trabajo de clientes Tier 1 para estrategias de adopción de software.\n• Posicionamiento e integración técnica de Environment for Revit, NTI for Revit y Realtime LCA a través de Speckle.\n• Preparación del sector para la refundición de la EPBD (UE 2024/1275) e informes WLC de Level(s).\n• Implementación de CDE y norma ISO 19650 para elevar los estándares de entrega multidisciplinaria interna.",
       reasonForLeaving: "Acepté oferta para proyecto hospitalario de gran escala (Germania).",
     },
     {
@@ -42,7 +42,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM / Especialista MEP",
       location: "España",
       project: "Centros de Datos Hyperscale (~€6-10B) & Infraestructura Defensa OTAN (~€0.8B)",
-      summary: "• Diseño técnico y coordinación espacial MEP (LOD 300-350) para proyectos clasificados / NDA.\n• Producción de entregables BIM bajo estándares USACE y AECOM.\n• Aseguramiento de calidad en entregas escalonadas (30/60/90/100%) en inglés.",
+      summary: "• Diseño técnico y coordinación espacial MEP (LOD 300-350) bilingüe para Centros de Datos e Infraestructura de Defensa.\n• Manejo de proyectos de misión crítica protegidos por acuerdos de confidencialidad (NDA).\n• Producción bajo marcos estrictos de consultoría AECOM y estándares del Cuerpo de Ingenieros del Ejército (USACE).\n• Seguimiento riguroso de entregables escalonados por fases de hito (30/60/90/100%).",
       reasonForLeaving: "Finalización de fase; reorientación a consultoría técnica corporativa.",
     },
     {
@@ -53,7 +53,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "España / Bélgica",
       project: "Defensa OTAN (~250.000m² | ~€0.8B)",
-      summary: "• Modelado BIM MEP de despliegue rápido bajo protocolos AECOM (Inglés).\n• Integración en equipos deslocalizados para diseño crítico en plazos ajustados.",
+      summary: "• Diseño y coordinación BIM MEP de despliegue rápido para instalaciones de defensa de la OTAN en Bélgica.\n• Operación bajo protocolos internacionales AECOM/USACE en un entorno totalmente bilingüe.\n• Gestión analítica de entregas por fases para asegurar compromisos a largo plazo con el cliente institucional.",
       reasonForLeaving: "Reasignación a proyecto macro (Hyperscale) vía Exceltic.",
     },
     {
@@ -64,7 +64,7 @@ export const cvData: CVData = {
       role: "Modelador BIM MEP / CAD",
       location: "Madrid, España",
       project: "Residencial / Transporte (Multi-proyecto)",
-      summary: "• Producción de planos de taller de instalaciones y mediciones manuales preventivas.",
+      summary: "• Apoyo técnico a flujos de trabajo de pre-construcción en proyectos residenciales, industriales y transporte.\n• Preparación de distribuciones espaciales MEP en CAD y generación de planos de producción de obra.\n• Extracción de mediciones manuales ágiles para gestión y control en múltiples proyectos concurrentes.",
       reasonForLeaving: "Oferta corporativa internacional (OTAN).",
     },
     {
@@ -75,7 +75,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "España",
       project: "Camp Nou FC Barcelona (~300.000m² | ~€1.3B)",
-      summary: "• Liderazgo del equipo de modelado on-site para arquitectura bajo modelo federado gigante.\n• Implementación de flujos CDE e ISO 19650 en proyecto deportivo de máxima visibilidad europea.",
+      summary: "• Liderazgo directivo del equipo de modelado in situ de Plenum para la producción BIM arquitectónica del proyecto estadio.\n• Control de calidad estricto de entregables dentro de modelo federado de altísima densidad y complejidad geométrica.\n• Gobernanza operacional regida rigurosamente por flujos de trabajo ISO 19650 y esquemas CDE integrados.\n• Prestación de soporte técnico remoto ininterrumpido para estabilizar operaciones tras el despliegue de fases.",
       reasonForLeaving: "Reasignación estratégica dentro de la consultora matriz.",
     },
     {
@@ -86,7 +86,7 @@ export const cvData: CVData = {
       role: "BIM Manager / Operations Manager",
       location: "España",
       project: "Fehmarnbelt Tunnel (~€7.4B) | P. Marqués Salamanca | Fac. Matemáticas UCM",
-      summary: "• Dirección del departamento BIM gestionando un equipo de 16 profesionales con metodologías PMBOK y Agile.\n• Coordinación Open BIM (IFC) de 22 segmentos del túnel Fehmarnbelt, resolviendo problemas de interoperabilidad complejos.\n• Gestión del ciclo de vida ISO 19650 (BEP, CDE, LoIN) y sesiones ICE para resolución de clashes críticos.",
+      summary: "• Dirección de operaciones BIM (PMBOK / ISO 21502 / Agile) gestionando 4 megaproyectos internacionales (>€7.000M).\n• Liderazgo del ciclo de vida ISO 19650: re-implementación de BEPs, definición rigurosa de LoIN y administración en CDE.\n• Adquisición, gestión y capacitación de talento técnico para equipo multidisciplinar de 16 profesionales (Arq/Est/MEP).\n• Coordinación Open BIM de 22 segmentos del túnel sumergido más largo del mundo (Fehmarnbelt) bajo metodología Kanban.\n• Implementación de QA sistemático, defensa de modelos federados en sesiones ICE y resolución de interoperabilidad.",
       reasonForLeaving: "Paralización temporal del macroproyecto (Túnel); transición tras consolidar el departamento.",
     },
     {
@@ -97,7 +97,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM / Especialista MEP",
       location: "España",
       project: "IDOM (TMT Telescope ~€1.7B, Hospitales) | Hospital Dakar (~€135M) | ARUP",
-      summary: "• Lead Modelator Arquitectura & MEP en simultáneo para Hospitales, Proyectos Científicos y Educación.\n• Promovido a BIM Manager por capacidad nativa para estabilizar flujos de trabajo caóticos y liderar al equipo técnico.\n• Creación de librerías Revit estandarizadas y assets automatizados para el departamento.",
+      summary: "• Recurso técnico núcleo en volumen extremo de proyectos multidisciplinares (Salud, Científico, Transporte) bajo hitos implacables.\n• Absorción proactiva de la gestión BIM departamental en cuellos de botella y coordinación on-site del compromiso Camp Nou.\n• Liderazgo en especificación técnica de infraestructura IT y despliegue de servidores para prevenir crash de datos masivos.\n• Desarrollo de bibliotecas estándar, assets automatizados y flujos de scripting (Python/Dynamo) como núcleo del departamento.\n• Asesoría PM/PMP proactiva a la dirección de la empresa provocando un ascenso unánime a BIM Manager.",
       reasonForLeaving: "Ascenso a BIM Manager departamental.",
     },
     {
@@ -108,7 +108,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "Venezuela",
       project: "Isla Multiespacio (~90.000m²) | Cameva Retail",
-      summary: "• Digitalización del diseño arquitectónico en entorno BIM. Producción de planos ejecutivos, renders y supervisión a pie de obra.",
+      summary: "• Entrega integral de documentación BIM arquitectónica y estructural para proyectos de uso mixto de alta escala.\n• Producción de entregables completos: planos de obra, secciones constructivas, renderizado y visualizaciones de venta.\n• Supervisión directa a pie de obra garantizando alineación geométrica y técnica entre el modelo y la construcción física.\n• Coordinación multiplataforma y multidisciplinar (ArchiCAD/Revit) estableciendo conocimientos fundamentales en IFC.",
       reasonForLeaving: "Expatriación internacional para especialización PMP.",
     },
   ],
