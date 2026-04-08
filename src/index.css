@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
 @import "tailwindcss";
 
 @theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  /* Paleta Híbrida: Web/Impresión - Estética "Architectural" */
   --color-neutral-50: #fafafa;
   --color-neutral-100: #f5f5f5;
   --color-neutral-200: #e5e5e5;
@@ -12,12 +16,18 @@
   --color-neutral-800: #262626;
   --color-neutral-900: #171717;
   --color-neutral-950: #0a0a0a;
-  --color-black: #000000;
+  
+  --color-black: #050505; /* True Black suavizado */
   --color-white: #ffffff;
-  --color-accent: #3b82f6; /* Modern Blue Accent */
-  --color-dark-bg: #0f172a; /* Deep Slate Background */
-  --color-dark-surface: #1e293b; /* Surface Slate */
-  --color-dark-border: #334155; /* Slate Border */
+  
+  /* Acentos Premium: Azul Acero y Naranja Seguridad sutil */
+  --color-accent: #2563eb; /* Cobalt Blue */
+  --color-accent-subtle: #eff6ff; 
+  
+  /* Modo Oscuro Corporativo (No Gamer) */
+  --color-dark-bg: #111111; 
+  --color-dark-surface: #1a1a1a; 
+  --color-dark-border: #2a2a2a; 
 }
 
 .dark {
