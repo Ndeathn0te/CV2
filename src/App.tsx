@@ -89,7 +89,7 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         id="cv-print-area"
         ref={cvRef} 
-        className="w-[210mm] mx-auto bg-white dark:bg-dark-surface shadow-2xl print:shadow-none relative border border-neutral-200 dark:border-dark-border print:border-none min-h-[594mm] flex flex-col transition-colors duration-500"
+        className="w-[210mm] mx-auto bg-white dark:bg-dark-surface shadow-2xl print:shadow-none relative border border-neutral-200 dark:border-dark-border print:border-none min-h-[580mm] flex flex-col transition-colors duration-500"
       >
         {/* Header - Ultra Minimal */}
         <header className="bg-black dark:bg-black text-white px-8 py-3 flex flex-col md:flex-row justify-between items-center gap-3">
@@ -119,7 +119,7 @@ export default function App() {
         </header>
 
         {/* Hero Metrics - C-Level Snapshot */}
-        <section className="bg-neutral-900 border-b-2 border-accent text-white px-9 py-1.5 flex justify-between items-center text-[6.5pt] uppercase tracking-widest font-bold">
+        <section className="bg-neutral-900 border-b-2 border-accent text-white px-9 py-1 flex justify-between items-center text-[6.5pt] uppercase tracking-widest font-bold">
           <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Valor de Programa</span><span className="text-white">&gt; €10.000 Millones</span></div>
           <div className="w-px h-5 bg-neutral-700"></div>
           <div className="flex flex-col"><span className="text-neutral-400 text-[5.5pt]">Área Coordinada</span><span className="text-white">&gt; 500.000 m²</span></div>
@@ -139,10 +139,10 @@ export default function App() {
 
         <div className="grid grid-cols-12 flex-grow">
           {/* Experience Column */}
-          <div className="col-span-8 px-9 py-2 space-y-3 border-r border-neutral-100 dark:border-dark-border">
+          <div className="col-span-8 px-9 py-2 space-y-2 border-r border-neutral-100 dark:border-dark-border">
             <section>
               <h2 className="text-[8pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-1.5 pb-0.5">Experiencia</h2>
-              <div className="space-y-2.5">
+              <div className="space-y-2">
                 {cvData.experience.map((exp, idx) => (
                   <div key={idx} className="break-inside-avoid">
                     <div className="flex justify-between items-baseline">
@@ -183,7 +183,7 @@ export default function App() {
           </div>
 
           {/* Sidebar Column */}
-          <aside className="col-span-4 bg-neutral-50 dark:bg-dark-bg/20 px-7 py-3 space-y-4 print:bg-white min-h-full">
+          <aside className="col-span-4 bg-neutral-50 dark:bg-dark-bg/20 px-7 py-2 space-y-3 print:bg-white min-h-full">
             <section className="break-inside-avoid">
               <h2 className="text-[8pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
                 <Wrench size={8} /> Especialización
