@@ -139,29 +139,29 @@ export default function App() {
 
         <div className="grid grid-cols-12 flex-grow">
           {/* Experience Column */}
-          <div className="col-span-8 px-9 py-4 space-y-5 border-r border-neutral-100 dark:border-dark-border">
+          <div className="col-span-8 px-9 py-3 space-y-4 border-r border-neutral-100 dark:border-dark-border">
             <section>
-              <h2 className="text-[8.5pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-3 pb-1">Experiencia</h2>
-              <div className="space-y-5">
+              <h2 className="text-[8pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-0.5">Experiencia</h2>
+              <div className="space-y-3">
                 {cvData.experience.map((exp, idx) => (
                   <div key={idx} className="break-inside-avoid">
                     <div className="flex justify-between items-baseline">
                       <h3 className="text-[8.5pt] font-black uppercase leading-tight dark:text-white">{exp.role}</h3>
                       <span className="text-[6.5pt] font-bold text-neutral-500 dark:text-neutral-400">{exp.dates}</span>
                     </div>
-                    <div className="flex justify-between text-[7pt] font-bold text-neutral-400 dark:text-neutral-500 uppercase mb-0.5">
+                    <div className="flex justify-between text-[6.5pt] font-bold text-neutral-400 dark:text-neutral-500 uppercase mb-0.5">
                       <span>{exp.company} / {exp.sector} • {exp.location}</span>
                       <span>{exp.duration}</span>
                     </div>
                     <div className="flex items-start gap-1 bg-neutral-50 dark:bg-dark-bg/30 px-1 border-l border-black dark:border-white mb-0.5">
-                      <ChevronRight size={7} className="mt-1 shrink-0" />
-                      <p className="text-[7pt] font-bold text-neutral-800 dark:text-neutral-200 italic leading-tight">{exp.project}</p>
+                      <ChevronRight size={6} className="mt-0.5 shrink-0" />
+                      <p className="text-[6.5pt] font-bold text-neutral-800 dark:text-neutral-200 italic leading-tight">{exp.project}</p>
                     </div>
-                    <p className="text-[7.5pt] text-neutral-800 dark:text-neutral-300 leading-snug whitespace-pre-line mb-1">{exp.summary}</p>
+                    <p className="text-[7pt] text-neutral-800 dark:text-neutral-300 leading-snug whitespace-pre-line mb-0.5">{exp.summary}</p>
                     {exp.reasonForLeaving && exp.reasonForLeaving !== "N/A - Puesto actual" && (
-                      <div className="flex gap-1.5 items-start bg-neutral-50 dark:bg-dark-bg/20 p-1 border-l-2 border-neutral-200 dark:border-dark-border mt-1">
-                        <span className="text-[6pt] font-black uppercase text-neutral-400 shrink-0 mt-0.5">Motivo de salida:</span>
-                        <p className="text-[7pt] text-neutral-500 dark:text-neutral-500 italic leading-tight text-justify">{exp.reasonForLeaving}</p>
+                      <div className="flex gap-1 items-start bg-neutral-50 dark:bg-dark-bg/20 px-1 py-0.5 border-l-2 border-neutral-200 dark:border-dark-border">
+                        <span className="text-[5.5pt] font-black uppercase text-neutral-400 shrink-0 mt-0.5">Salida:</span>
+                        <p className="text-[6.5pt] text-neutral-500 dark:text-neutral-500 italic leading-tight">{exp.reasonForLeaving}</p>
                       </div>
                     )}
                   </div>
@@ -170,8 +170,8 @@ export default function App() {
             </section>
 
             <section className="break-inside-avoid">
-              <h2 className="text-[9pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-2 pb-1">Historial</h2>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
+              <h2 className="text-[8pt] font-black uppercase tracking-widest border-b-2 border-black dark:border-white mb-1.5 pb-0.5">Historial</h2>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
                 {cvData.earlierExperience.map((exp, idx) => (
                   <div key={idx} className="flex justify-between items-start text-[7.5pt] border-b border-neutral-50 dark:border-dark-border/50 pb-0.5 gap-2">
                     <span className="font-bold uppercase leading-tight text-neutral-800 dark:text-neutral-200">{exp.role} @ {exp.company}</span>
@@ -183,18 +183,18 @@ export default function App() {
           </div>
 
           {/* Sidebar Column */}
-          <aside className="col-span-4 bg-neutral-50 dark:bg-dark-bg/20 px-7 py-4 space-y-6 print:bg-white min-h-full">
+          <aside className="col-span-4 bg-neutral-50 dark:bg-dark-bg/20 px-7 py-3 space-y-4 print:bg-white min-h-full">
             <section className="break-inside-avoid">
               <h2 className="text-[8pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
                 <Wrench size={8} /> Especialización
               </h2>
-              <div className="space-y-2">
+              <div className="space-y-1.5">
                 {cvData.technicalSkills.map((cat, idx) => (
                   <div key={idx}>
                     <h3 className="text-[7pt] font-bold uppercase text-neutral-900 dark:text-neutral-100 mb-0.5">{cat.category}</h3>
                     <div className="flex flex-wrap gap-0.5">
                       {cat.skills.map((skill, sIdx) => (
-                        <span key={sIdx} className="text-[7.5pt] bg-white dark:bg-dark-surface border border-neutral-200 dark:border-dark-border px-1.5 py-0.5 text-neutral-700 dark:text-neutral-300 uppercase">{skill}</span>
+                        <span key={sIdx} className="text-[7pt] bg-white dark:bg-dark-surface border border-neutral-200 dark:border-dark-border px-1.5 py-0.5 text-neutral-700 dark:text-neutral-300 uppercase">{skill}</span>
                       ))}
                     </div>
                   </div>
@@ -206,7 +206,7 @@ export default function App() {
               <h2 className="text-[8pt] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2 flex items-center gap-1">
                 <GraduationCap size={8} /> Educación
               </h2>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {cvData.education.map((edu, idx) => (
                   <div key={idx}>
                     <p className="text-[8pt] font-bold uppercase leading-tight text-neutral-900 dark:text-neutral-100">{edu.degree}</p>
@@ -255,7 +255,7 @@ export default function App() {
           </aside>
         </div>
 
-        <footer className="mt-auto bg-black text-white px-8 py-3 flex justify-between items-center text-[6pt] uppercase tracking-widest">
+        <footer className="mt-auto bg-black text-white px-8 py-2 flex justify-between items-center text-[6pt] uppercase tracking-widest">
           <span>Armando González • Portafolio CV • 2026</span>
           <div className="flex gap-2">
             <div className="w-4 h-[1px] bg-neutral-800 rotate-45" />
