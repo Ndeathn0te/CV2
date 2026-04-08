@@ -10,7 +10,7 @@ export const cvData: CVData = {
     linkedin: "linkedin.com/in/armando-gonzalez-tapiador",
     photo: "https://media.licdn.com/dms/image/v2/D4D03AQEW8hzfDwtP8A/profile-displayphoto-shrink_800_800/B4DZSzL4cLHkAc-/0/1738173025110?e=1775692800&v=beta&t=GzVQ_npAg3v4AuVE6Yr-8slyTcuNGm_Hratov_YpwCY",
   },
-  summary: "• BIM Manager / Coordinador y Director de Proyectos PMP con más de 5 años entregando proyectos internacionales complejos en los sectores de Salud, Centros de Datos a Hiperescala, Infraestructura, Científico, Deportes y Defensa.\n• Exposición a más de 10.000 millones de euros en valor de programa acumulado y más de 500.000 m² de área construida coordinada.\n• Trayectoria dirigiendo operaciones a nivel de departamento bajo PMBOK / ISO 21502 / ISO 19650 — desde la gestión del ciclo de vida del BEP y la adquisición de talento hasta sesiones ICE con clientes y gobernanza de QA.\n• Liderando equipos multidisciplinarios (hasta 16 miembros) en megaproyectos concurrentes en entornos bilingües (inglés/español), operando como un vínculo de confianza entre el liderazgo ejecutivo, los equipos de ingeniería y los clientes de Nivel 1.",
+  summary: "• BIM Manager / Coordinador y Director de Proyectos PMP con más de 5 años entregando proyectos internacionales complejos en los sectores de Salud, Centros de Datos a Hiperescala, Infraestructura, Científico, Deportes y Defensa.\n• Exposición a más de 10.000 millones de euros en valor de programa acumulado y más de 500.000 m² de área construida coordinada.\n• Trayectoria dirigiendo operaciones a nivel de departamento bajo PMBOK / ISO 21502 / ISO 19650 — desde la gestión del ciclo de vida del BEP y la adquisición de talento hasta sesiones ICE con clientes y gobernanza de QA.\n• Liderazgo de equipos multidisciplinarios (hasta 16 miembros) en megaproyectos concurrentes en entornos bilingües (inglés/español), operando como un vínculo de confianza entre el liderazgo ejecutivo, los equipos de ingeniería y los clientes de Nivel 1.",
   experience: [
     {
       dates: "2025-08 a la actualidad",
@@ -42,7 +42,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM / Especialista MEP",
       location: "España",
       project: "Centros de Datos a Hiperescala (~20.000m² IT por instalación | ~€6-10B Programa Regional) - Microsoft y Amazon / Infraestructura de Defensa de la OTAN (~250.000m² | ~€0.8B) vía AECOM",
-      summary: "• Entrega de paquetes de diseño técnico MEP y coordinación espacial (LOD 300-350) en inglés y español para centros de datos a hiperescala de misión crítica e infraestructura de defensa bajo marcos de AECOM, estándares USACE y protocolos de seguridad protegidos por NDA.\n• Seguimiento de entregables de hitos por fases (30/60/90/100%).",
+      summary: "• Entrega de paquetes de diseño técnico MEP y coordinación espacial (LOD 300-350) en inglés y español para centros de datos a hiperescala de misión crítica e infraestructura de defensa bajo marcos de AECOM, estándares USACE y protocolos de seguridad protegidos por NDA.\n• Seguimiento de hitos de entregables por fases (30/60/90/100%).",
       reasonForLeaving: "Finalización de la fase del proyecto; transición a consultoría BIM con el apoyo de la dirección.",
     },
     {
@@ -53,7 +53,7 @@ export const cvData: CVData = {
       role: "Arquitecto BIM",
       location: "España / Bélgica",
       project: "Infraestructura de Defensa de la OTAN (~250.000m² | ~€0.8B) - Bélgica vía AECOM",
-      summary: "• Diseño y coordinación BIM de despliegue rápido para instalaciones de defensa de la OTAN bajo protocolos AECOM/USACE.\n• Navegación de entrega por fases en un entorno bilingüe, asegurando un compromiso a largo plazo.",
+      summary: "• Diseño y coordinación BIM de despliegue rápido para instalaciones de defensa de la OTAN bajo protocolos AECOM/USACE.\n• Gestión de entregas por fases en un entorno bilingüe, asegurando un compromiso a largo plazo.",
       reasonForLeaving: "AECOM redujo la plantilla externa; reincorporación para un puesto MEP ampliado a través de Exceltic.",
     },
     {
@@ -64,7 +64,7 @@ export const cvData: CVData = {
       role: "Modelador BIM MEP / CAD",
       location: "Madrid, España",
       project: "Diversas instalaciones residenciales, intercambiadores de transporte e industriales",
-      summary: "• Apoyo a los flujos de trabajo de pre-construcción mediante la preparación de distribuciones espaciales MEP en CAD, planos de producción y mediciones manuales en múltiples proyectos de ritmo rápido.",
+      summary: "• Apoyo a los flujos de trabajo de preconstrucción mediante la preparación de distribuciones espaciales MEP en CAD, planos de producción y mediciones manuales en múltiples proyectos de ritmo rápido.",
       reasonForLeaving: "Acepté un puesto centrado en proyectos de defensa internacionales que ofrecían un mayor alcance técnico.",
     },
     {
@@ -109,7 +109,7 @@ export const cvData: CVData = {
       location: "Venezuela",
       project: "Isla Multiespacio High-Rise (~90,000m² | ~€150M) y Cadena de Retail Cameva (~20,000m² | ~€30M Agregado)",
       summary: "• Entrega de documentación BIM arquitectónica y estructural completa para proyectos de uso mixto — planos, secciones, detalles, renders, visualizaciones y cuantificación de materiales.\n• Supervisión regular de la construcción in situ garantizando la alineación del diseño con la obra.\n• Coordinación multiplataforma con homólogos de ArchiCAD, adquiriendo experiencia fundamental en IFC/Open BIM.",
-      reasonForLeaving: "Me fui para cursar el Máster en Dirección Integrada de Proyectos.",
+      reasonForLeaving: "Salida para cursar el Máster en Dirección Integrada de Proyectos.",
     },
   ],
   earlierExperience: [
