@@ -1,0 +1,3 @@
+#:schema https://developers.cloudflare.com/workers/wrangler/configuration-schema.json
+name = "armando-cv"
+pages_build_output_dir = "dist"
