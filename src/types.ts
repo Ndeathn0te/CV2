@@ -56,7 +56,6 @@ export interface PortfolioProject {
   description: string;
   methodology: string[];
   techStack: string[];
-  imageUrl: string;
 }
 
 export interface CVData {

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ExternalLink, Layers, MapPin, Maximize2, Tag } from "lucide-react";
+import { Layers, MapPin, Maximize2, Tag, Wrench } from "lucide-react";
 import { PortfolioProject } from "./types";
 
 interface PortfolioProps {
@@ -10,100 +10,85 @@ interface PortfolioProps {
 export default function Portfolio({ projects, lang }: PortfolioProps) {
   const t = {
     es: {
-      subtitle: "Compendio de Proyectos de Alta Complejidad",
-      methodology: "Metodología",
-      techStack: "Tecnologías",
-      details: "Ver Detalles",
-      area: "Superficie",
-      value: "Inversión"
+      subtitle: "Proyectos Seleccionados",
+      methodology: "Marco de Trabajo",
+      techStack: "Software",
     },
     en: {
-      subtitle: "Compendium of High-Complexity Projects",
-      methodology: "Methodology",
-      techStack: "Tech Stack",
-      details: "View Details",
-      area: "Area",
-      value: "Program Value"
+      subtitle: "Selected Projects",
+      methodology: "Framework",
+      techStack: "Software",
     }
   }[lang];
 
   return (
-    <div className="flex-grow p-8 bg-white dark:bg-dark-surface transition-colors duration-500 overflow-y-auto">
-      <header className="mb-12">
-        <h2 className="text-4xl font-black tracking-tighter uppercase mb-2 dark:text-white">Portfolio</h2>
-        <p className="text-neutral-500 dark:text-neutral-400 font-medium tracking-widest uppercase text-sm">
+    <div className="flex-grow px-6 py-10 bg-white dark:bg-dark-surface transition-colors duration-500">
+      <header className="mb-10 border-b-2 border-black dark:border-white pb-4">
+        <h2 className="text-3xl font-black tracking-tighter uppercase mb-1 dark:text-white">Portfolio</h2>
+        <p className="text-neutral-400 dark:text-neutral-500 font-bold tracking-widest uppercase text-[10px]">
           {t.subtitle}
         </p>
       </header>
 
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, idx) => (
-          <motion.div
+          <motion.article
             key={project.id}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: idx * 0.1 }}
-            className="group relative bg-neutral-50 dark:bg-dark-bg/40 border border-neutral-200 dark:border-dark-border overflow-hidden flex flex-col h-full"
+            transition={{ delay: idx * 0.05 }}
+            className="group border border-neutral-200 dark:border-dark-border p-5 flex flex-col h-full bg-neutral-50 dark:bg-dark-bg/30 hover:border-black dark:hover:border-white transition-colors duration-300"
           >
-            {/* Image Section */}
-            <div className="relative aspect-video overflow-hidden">
-              <img 
-                src={project.imageUrl} 
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
-              />
-              <div className="absolute top-4 left-4">
-                <span className="bg-black/80 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest backdrop-blur-sm">
-                  {project.category}
-                </span>
-              </div>
+            {/* Header */}
+            <div className="mb-3">
+              <span className="text-[9px] font-bold uppercase tracking-widest text-accent mb-1 block">
+                {project.category}
+              </span>
+              <h3 className="text-base font-black uppercase tracking-tight dark:text-white leading-tight">
+                {project.title}
+              </h3>
             </div>
 
-            {/* Content Section */}
-            <div className="p-6 flex flex-col flex-grow">
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-black uppercase tracking-tight dark:text-white">{project.title}</h3>
-                <ExternalLink size={20} className="text-neutral-300 dark:text-neutral-600" />
-              </div>
+            {/* Metrics row */}
+            <div className="flex flex-wrap gap-3 text-[9px] uppercase font-bold text-neutral-500 dark:text-neutral-400 mb-3 pb-3 border-b border-neutral-200 dark:border-dark-border">
+              <div className="flex items-center gap-1"><MapPin size={10} className="text-neutral-400" /> {project.location}</div>
+              {project.area && <div className="flex items-center gap-1"><Maximize2 size={10} className="text-neutral-400" /> {project.area}</div>}
+              {project.value && <div className="flex items-center gap-1"><Layers size={10} className="text-neutral-400" /> {project.value}</div>}
+            </div>
 
-              <div className="flex flex-wrap gap-4 text-[10px] uppercase font-bold text-neutral-500 dark:text-neutral-400 mb-6">
-                <div className="flex items-center gap-1.5"><MapPin size={12} className="text-accent" /> {project.location}</div>
-                {project.area && <div className="flex items-center gap-1.5"><Maximize2 size={12} className="text-accent" /> {project.area}</div>}
-                {project.value && <div className="flex items-center gap-1.5"><Layers size={12} className="text-accent" /> {project.value}</div>}
-              </div>
+            {/* Description */}
+            <p className="text-[11px] text-neutral-600 dark:text-neutral-300 leading-relaxed mb-4 flex-grow">
+              {project.description}
+            </p>
 
-              <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-6 flex-grow italic">
-                {project.description}
-              </p>
-
-              <div className="space-y-4 pt-4 border-t border-neutral-200 dark:border-dark-border">
-                <div>
-                  <h4 className="text-[10px] font-black uppercase tracking-widest text-neutral-400 mb-2 flex items-center gap-2">
-                    <Tag size={10} /> {t.methodology}
-                  </h4>
-                  <div className="flex flex-wrap gap-1.5">
-                    {project.methodology.map(m => (
-                      <span key={m} className="text-[9px] bg-neutral-200 dark:bg-dark-surface px-2 py-0.5 font-bold uppercase dark:text-neutral-400">
-                        {m}
-                      </span>
-                    ))}
-                  </div>
+            {/* Tags */}
+            <div className="flex flex-wrap gap-3 pt-3 border-t border-neutral-200 dark:border-dark-border">
+              <div className="flex-1 min-w-0">
+                <h4 className="text-[8px] font-black uppercase tracking-widest text-neutral-400 mb-1.5 flex items-center gap-1">
+                  <Tag size={8} /> {t.methodology}
+                </h4>
+                <div className="flex flex-wrap gap-1">
+                  {project.methodology.map(m => (
+                    <span key={m} className="text-[8px] bg-black dark:bg-white text-white dark:text-black px-1.5 py-0.5 font-bold uppercase">
+                      {m}
+                    </span>
+                  ))}
                 </div>
-                <div>
-                  <h4 className="text-[10px] font-black uppercase tracking-widest text-neutral-400 mb-2 flex items-center gap-2">
-                    <Tag size={10} /> {t.techStack}
-                  </h4>
-                  <div className="flex flex-wrap gap-1.5">
-                    {project.techStack.map(s => (
-                      <span key={s} className="text-[9px] border border-neutral-300 dark:border-dark-border px-2 py-0.5 font-bold uppercase dark:text-neutral-300">
-                        {s}
-                      </span>
-                    ))}
-                  </div>
+              </div>
+              <div className="flex-1 min-w-0">
+                <h4 className="text-[8px] font-black uppercase tracking-widest text-neutral-400 mb-1.5 flex items-center gap-1">
+                  <Wrench size={8} /> {t.techStack}
+                </h4>
+                <div className="flex flex-wrap gap-1">
+                  {project.techStack.map(s => (
+                    <span key={s} className="text-[8px] border border-neutral-300 dark:border-dark-border px-1.5 py-0.5 font-bold uppercase text-neutral-600 dark:text-neutral-300">
+                      {s}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
     </div>

@@ -141,7 +141,7 @@ export default function App() {
           <div className="flex items-center gap-2 px-2">
             <FileText size={20} />
             <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 font-medium whitespace-nowrap">
-              Imprimir / PDF
+              {lang === 'es' ? 'Imprimir / PDF' : 'Print / PDF'}
             </span>
             <ExternalLink size={14} className="opacity-50" />
           </div>
