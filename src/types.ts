@@ -46,6 +46,19 @@ export interface Language {
   level: string;
 }
 
+export interface PortfolioProject {
+  id: string;
+  title: string;
+  category: string;
+  location: string;
+  area?: string;
+  value?: string;
+  description: string;
+  methodology: string[];
+  techStack: string[];
+  imageUrl: string;
+}
+
 export interface CVData {
   name: string;
   title: string;
@@ -59,3 +72,4 @@ export interface CVData {
   certifications: string[];
   languages: Language[];
 }
+
